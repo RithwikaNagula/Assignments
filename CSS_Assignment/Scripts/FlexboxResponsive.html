@@ -5,40 +5,142 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flexbox Bookstore</title>
 <link rel="stylesheet" href="C:\Users\rithw\OneDrive\Desktop\Training\HTML\Flexstyles.css">
+
+<style>
+  .card {
+    line-height: 1.6;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .author,
+  .meta {
+    color: #555;
+  }
+
+  .price {
+    color: green;
+    font-weight: bold;
+  }
+
+  .category-desc {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .highlight {
+    color: purple;
+  }
+</style>
 </head>
+
 <body>
+
 <!-- Using Row as Flex flex-direction -->
-    <h2>Books</h2>
-    <div class="featured">
-        <div class="card">The Alchemist</div>
-        <div class="card">Atomic Habits</div>
-        <div class="card">Rich Dad Poor Dad</div>
-        <div class="card">Ikigai</div>
+<h2>Books</h2>
+<div class="featured">
+    <div class="card">
+        <span class="title">The Alchemist</span><br>
+        <span class="author">Author: Paulo Coelho</span><br>
+        <span class="price">Price: ₹399</span>
     </div>
+
+    <div class="card">
+        <span class="title">Atomic Habits</span><br>
+        <span class="author">Author: James Clear</span><br>
+        <span class="price">Price: ₹499</span>
+    </div>
+
+    <div class="card">
+        <span class="title">Rich Dad Poor Dad</span><br>
+        <span class="author">Author: Robert Kiyosaki</span><br>
+        <span class="price">Price: ₹450</span>
+    </div>
+
+    <div class="card">
+        <span class="title">Ikigai</span><br>
+        <span class="author">Author: Hector Garcia</span><br>
+        <span class="price">Price: ₹350</span>
+    </div>
+</div>
+
 <!-- Using row-reverse as flex flex-direction -->
-    <h2>Book Categories</h2>
-    <div class="categories">
-        <div class="card">Fiction</div>
-        <div class="card">Non-Fiction</div>
-        <div class="card">Technology</div>
-        <div class="card">Self-Help</div>
-        <div class="card">Biographies</div>
+<h2>Book Categories</h2>
+<div class="categories">
+    <div class="card">
+        <span class="title">Fiction</span><br>
+        <span class="category-desc">Novels & short stories</span>
     </div>
+    <div class="card">
+        <span class="title">Non-Fiction</span><br>
+        <span class="category-desc">Real-life & factual books</span>
+    </div>
+    <div class="card">
+        <span class="title">Technology</span><br>
+        <span class="category-desc">Programming & AI</span>
+    </div>
+    <div class="card">
+        <span class="title">Self-Help</span><br>
+        <span class="category-desc">Personal growth</span>
+    </div>
+    <div class="card">
+        <span class="title">Biographies</span><br>
+        <span class="category-desc">Life stories</span>
+    </div>
+</div>
+
 <!-- Using Column as flex direction -->
-    <h2>Best Sellers</h2>
-    <div class="best-sellers">
-        <div class="card">Harry Potter</div>
-        <div class="card">Think Like a Monk</div>
-        <div class="card">Deep Work</div>
+<h2>Best Sellers</h2>
+<div class="best-sellers">
+    <div class="card">
+        <span class="title">Harry Potter</span><br>
+        <span class="author">Author: J.K. Rowling</span><br>
+        <span class="highlight">Copies Sold: 120M+</span>
     </div>
+
+    <div class="card">
+        <span class="title">Think Like a Monk</span><br>
+        <span class="author">Author: Jay Shetty</span><br>
+        <span class="highlight">Bestseller 2023</span>
+    </div>
+
+    <div class="card">
+        <span class="title">Deep Work</span><br>
+        <span class="author">Author: Cal Newport</span><br>
+        <span class="highlight">Productivity Classic</span>
+    </div>
+</div>
+
 <!-- Using flex wrap -->
-    <h2>New Arrivals</h2>
-    <div class="new-arrivals">
-        <div class="card">AI for Beginners</div>
-        <div class="card">Psychology of Money</div>
-        <div class="card">Start With Why</div>
-        <div class="card">The Lean Startup</div>
+<h2>New Arrivals</h2>
+<div class="new-arrivals">
+    <div class="card">
+        <span class="title">AI for Beginners</span><br>
+        <span class="meta">Category: Technology</span><br>
+        <span class="price">₹599</span>
     </div>
+
+    <div class="card">
+        <span class="title">Psychology of Money</span><br>
+        <span class="meta">Author: Morgan Housel</span><br>
+        <span class="price">₹499</span>
+    </div>
+
+    <div class="card">
+        <span class="title">Start With Why</span><br>
+        <span class="meta">Author: Simon Sinek</span><br>
+        <span class="price">₹450</span>
+    </div>
+
+    <div class="card">
+        <span class="title">The Lean Startup</span><br>
+        <span class="meta">Author: Eric Ries</span><br>
+        <span class="price">₹550</span>
+    </div>
+</div>
 
 </body>
 </html>
