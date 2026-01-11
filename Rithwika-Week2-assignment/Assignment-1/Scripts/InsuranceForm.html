@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Enquiry & Feedback</title>
+    <link rel="stylesheet" href="../Styles/Formstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1>Insurance Enquiry & Feedback</h1>
+            <p class="description">Protecting your future with comprehensive insurance solutions. Get expert assistance for your policy needs.</p>
+            
+            <form id="enquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                    <span class="error-message" id="fullNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="mobile">Mobile Number <span class="required">*</span></label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+                    <span class="error-message" id="mobileError"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="requestType">Request Type <span class="required">*</span></label>
+                    <select id="requestType" name="requestType">
+                        <option value="">Select request type</option>
+                        <option value="Policy Enquiry">Policy Enquiry</option>
+                        <option value="Claim Related">Claim Related</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                    <span class="error-message" id="requestTypeError"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="policyType">Policy Type <span class="required">*</span></label>
+                    <select id="policyType" name="policyType">
+                        <option value="">Select policy type</option>
+                        <option value="Health Insurance">Health Insurance</option>
+                        <option value="Life Insurance">Life Insurance</option>
+                        <option value="Vehicle Insurance">Vehicle Insurance</option>
+                        <option value="Home Insurance">Home Insurance</option>
+                    </select>
+                    <span class="error-message" id="policyTypeError"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message (minimum 10 characters)"></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Experience Rating <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="rating" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="rating" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="rating" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="rating" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="rating" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                    <span class="error-message" id="ratingError"></span>
+                </div>
+
+                <div class="success-message" id="successMessage"></div>
+                <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="InsuranceForm.js"></script>
+</body>
+</html>
+

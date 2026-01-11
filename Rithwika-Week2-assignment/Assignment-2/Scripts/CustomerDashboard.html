@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Customer Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h1 class="text-3xl font-bold">Hartford</h1>
+                    <p class="text-blue-100 mt-1">Protecting Your Future, Today</p>
+                </div>
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                    Agent Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Hartford</h2>
+                <p class="text-xl text-blue-100 mb-8">Your trusted partner for comprehensive insurance solutions</p>
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+                    Get Started Today
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm mb-1">Total Customers</p>
+                            <p class="text-3xl font-bold" id="totalCustomers">0</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm mb-1">Active Policies</p>
+                            <p class="text-3xl font-bold" id="totalPolicies">0</p>
+                        </div>
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-600 text-sm mb-1">Total Premium Value</p>
+                            <p class="text-3xl font-bold" id="totalPremium">₹0</p>
+                        </div>
+                        <div class="bg-yellow-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Available Insurance Plans</h2>
+        <div id="insurancePlans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+    </section>
+
+
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Customer Enquiry Form</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="enquiryForm" class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="customerName" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Customer Name <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="customerName" 
+                                name="customerName"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Enter customer name"
+                                required
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div>
+                            <label for="age" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Age <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="number" 
+                                id="age" 
+                                name="age"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Enter age"
+                                min="18"
+                                max="100"
+                                required
+                            >
+                            <span class="error-message" id="ageError"></span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Email <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Enter email address"
+                            required
+                        >
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="mb-6">
+                        <label for="policyType" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Policy Type <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="policyType" 
+                            name="policyType"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            required
+                        >
+                            <option value="">Select Policy Type</option>
+                            <option value="Health Insurance">Health Insurance</option>
+                            <option value="Life Insurance">Life Insurance</option>
+                            <option value="Vehicle Insurance">Vehicle Insurance</option>
+                        </select>
+                        <span class="error-message" id="policyTypeError"></span>
+                    </div>
+                    <div class="mb-6">
+                        <label for="coverage" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Coverage Amount: ₹<span id="coverageValue">500000</span> <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="range" 
+                            id="coverage" 
+                            name="coverage"
+                            min="500000"
+                            max="10000000"
+                            step="100000"
+                            value="500000"
+                            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                            required
+                        >
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span>₹5L</span>
+                            <span>₹100L</span>
+                        </div>
+                        <span class="error-message" id="coverageError"></span>
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    >
+                        Submit Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Customer List</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="filterPolicyType" class="block text-sm font-semibold text-gray-700 mb-2">
+                        Filter by Policy Type
+                    </label>
+                    <select 
+                        id="filterPolicyType" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <option value="">All Policy Types</option>
+                        <option value="Health Insurance">Health Insurance</option>
+                        <option value="Life Insurance">Life Insurance</option>
+                        <option value="Vehicle Insurance">Vehicle Insurance</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="searchName" class="block text-sm font-semibold text-gray-700 mb-2">
+                        Search by Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="searchName" 
+                        placeholder="Enter customer name..."
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Name</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Age</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Email</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Policy Type</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Coverage</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Estimated Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customerTableBody" class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td colspan="6" class="px-6 py-8 text-center text-gray-500">
+                                No customers found. Submit an enquiry to get started.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 SecureLife Insurance. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Your trusted insurance partner</p>
+        </div>
+    </footer>
+
+    <script src="CustomerDashboard.js"></script>
+</body>
+</html>
+
