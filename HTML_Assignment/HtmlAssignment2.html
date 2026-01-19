@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>CSS added page</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-bottom: 2px solid #333;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table th {
+            background-color: #d9edf7;
+        }
+
+        table td, table th {
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+            margin: auto;
+            padding: 15px;
+            border: 2px solid #333;
+            background-color: #fff;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        video, audio {
+            display: block;
+            margin: 15px auto;
+        }
+
+        ul, ol, dl {
+            margin-left: 50px;
+        }
+
+        section {
+            width: 450px;              
+            min-height: 220px;         
+            border: 1.5px solid #333;
+            padding: 20px 25px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border-radius: 12px;
+        }
+
+        section h2 {
+            display: flex;
+            color: darkred;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 14px;
+            border: 1px solid #333;
+            text-decoration: none;
+            color: black;
+        }
+
+        section a:hover {
+            background-color: #333;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cover {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+    </style>
+
+</head>
+
+<body>
+ 
+    <header>
+        <h1>HTML Page</h1>
+        <p>
+            Paragraph <span style="color:Red">Content</span>
+        </p>
+    </header> 
+
+    <p>
+        Lorem <b>ipsum dolor sit</b> amet consectetur 
+        <i>adipisicing elit.</i><br>
+        Laborum fugit <strong>impedit eaque nulla</strong> 
+        molestias aspernatur dicta <em>iure distinctio</em> 
+        incidunt dolor, <u>cum quod ea</u> at enim 
+        <small>accusantium</small> itaque dolore? 
+        <mark>Accusamus,</mark> accusantium!
+    </p>
+
+    <hr>
+
+        Lorem <q>ipsum</q> dolor sit  <del>amet consectetur</del> adipisicing elit.
+        Illum <sub>nesciunt</sub> doloremque veritatis in fuga.
+        <sup>Ipsa natus ab saepe</sup> eligendi placeat illum reprehenderit<pre>
+        similique    a ea,</pre>porro minus odit, totam rem.
+
+    <!-- Anchor Tag -->
+    <h4>Hyperlink:<a href="https://www.google.com">Google</a></h4>
+    <nav>
+        <img 
+            src="C:\Users\rithw\OneDrive\Desktop\Training\HTML\Img1.jfif"
+            alt="nature img"
+            width="300px"
+            height="200px">
+            <figcaption>Figure 1: Beautiful Nature Scenery</figcaption>
+    </nav>
+    <br>
+    
+    <!-- Video element -->
+    <video alt="Video not found" controls  width="300px" height="200px">
+        <source src="C:\Users\rithw\OneDrive\Desktop\Training\HTML\bird_video.mp4" type="video/mp4">
+    </video>
+
+    <br>
+
+    <!-- Audio element -->
+    <audio controls>
+        <source src="C:\Users\rithw\OneDrive\Desktop\Training\HTML\birds-chirping-241045.mp3" type="audio/mpeg">
+    </audio>
+
+    <br>
+
+    <!-- Table example -->
+    <table border="1" cellpadding="8" cellspacing="0">
+        <caption>Student Marks Report</caption>
+
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th colspan="3">Marks</th>
+        </tr>
+
+        <tr>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+
+        <tr>
+            <td>Ravi</td>
+            <td>85</td>
+            <td>90</td>
+            <td>88</td>
+        </tr>
+
+        <tr>
+            <td>Sneha</td>
+            <td colspan="2">Absent</td>
+            <td>75</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Total</td>
+            <td>170</td>
+            <td>165</td>
+            <td>163</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Average Score</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Form with multiple input types -->
+    <form>
+        <div>
+            <label>Name:</label>
+                <input type="text" placeholder="Enter name">
+                <br><br>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter email">
+                <br><br>
+
+                <label>Password:</label>
+                <input type="password">
+                <br><br>
+
+                <label>Age:</label>
+                <input type="number">
+                <br><br>
+
+            
+                <label>Gender:</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <br><br>
+
+                
+                <label>Hobbies:</label>
+                <input type="checkbox"> Reading
+                <input type="checkbox"> Music
+                <input type="checkbox"> Sports
+                <br><br>
+
+                <label>Date of Birth:</label>
+                <input type="date">
+                <br><br>
+
+                <label>Time:</label>
+                <input type="time">
+                <br><br>
+
+                <label>Upload File:</label>
+                <input type="file">
+                <br><br>
+        
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+        </div>
+       
+    </form>
+
+    
+    <h2>List Types</h2>
+    <!-- Unordered list -->
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <ol start="3">
+        <li>Item3</li>
+        <li>Item4</li>
+    </ol>
+
+    <!-- Description list -->
+    <dl>
+        <dt>Term1</dt>
+        <dd>Definition1</dd>
+        <dt>Term2</dt>
+        <dd>Definition2</dd>
+    </dl>
+
+    <!-- Clickable Regions -->
+    <img src="C:\Users\rithw\OneDrive\Desktop\Training\HTML\colorful_india_political_map.jpg" usemap="#indiamap" >
+
+    <map name="indiamap">
+ 
+        <area shape="poly" coords="707,1296,736,1222,838,1232,874,1296,928,1333,978,1354,926,1405,894,1429,799,1472,724,1504,681,1478,674,1415,680,1386,688,1356,684,1329,791,1237,962,1383,775,1492,686,1506,834,1448,857,1432,721,1265,844,1264,681,1440,763,1225,732,1241,701,1274,900,1306,853,1286" href="C:\Users\rithw\OneDrive\Desktop\Training\HTML\Telangana-New-Map-33-Districts.webp" alt="telangana">
+        <area shape="poly" coords="468,116,556,104,617,53,661,80,716,117,716,192,736,268,694,261,661,258,603,240,545,232,528,262,519,293,460,279,434,254,418,222,405,187,395,133,422,110" href="C:\Users\rithw\OneDrive\Desktop\Training\HTML\jammukashmir.jfif" alt="Jammu">
+        <area shape="poly" coords="82,1042,82,1000,41,956,62,920,127,900,187,893,218,878,278,877,351,893,382,920,422,964,456,1018,440,1060,413,1088,436,1112,414,1137,401,1174,377,1201,352,1179,340,1140,347,1106,328,1068,360,1051,323,1051,304,1084,295,1128,268,1152,235,1168,206,1176,177,1164,148,1133,124,1103,91,1076" href="C:\Users\rithw\OneDrive\Desktop\Training\HTML\Administrative_map_of_Gujarat.webp" alt="Gujarat">
+        <area shape="poly" coords="1477,638,1516,623,1570,623,1616,609,1660,595,1706,595,1739,577,1761,541,1807,519,1860,499,1868,535,1839,571,1808,593,1775,611,1760,649,1756,668,1724,700,1723,740,1711,790,1674,808,1660,777,1665,747,1678,712,1644,694,1629,671,1592,686,1540,689,1504,688,1482,691,1463,683,1472,657" href="C:\Users\rithw\OneDrive\Desktop\Training\HTML\Assam-Map.jpg" alt="Asssam">
+    </map>
+
+
+    <!-- Book Page using Named Anchors -->
+    <h1 style="text-align:center; color:purple">Book Library</h1>
+    <!-- COVER PAGE -->
+    <section id="cover">
+    <h2>AI & ML Book</h2>
+    <img src="C:\Users\rithw\OneDrive\Desktop\Training\HTML\OIP.jfif" alt="Cover page image" width="430" height="350">
+        
+    <div class="p1">
+        <div><a href="#page1">Next →</a></div>
+    </div>
+    </section>
+
+    <!-- PAGE 1 -->
+    <section id="page1">
+    <h2>AI & ML – Page 1</h2>
+    <p>
+        Artificial Intelligence is the simulation of human intelligence
+        in machines that are programmed to think and learn.
+         perspiciatis est? Tempora velit inventore facere deserunt similique repellendus excepturi libero atque quaerat labore provident sequi voluptatum aliquid corrupti, saepe qui, beatae, molestiae aspernatur? Autem, perferendis? Explicabo nihil aliquid aut odio, ipsum provident exercitationem iusto iure ex voluptatum doloribus veritatis, beatae, doloremque praesentium. Corrupti quibusdam, labore, et ducimus nobis quasi a earum atque sunt quia commodi itaque tempora beatae, ipsa voluptates facere sapiente fugiat? Repellendus iste reprehenderit adipisci necessitatibus ullam laborum assumenda nam, autem consequatur perspiciatis? Iure possimus quam, commodi aspernatur quibusdam ex. Consequatur nam, incidunt eligendi excepturi repellendus, consectetur cupiditate rem culpa, at tempore sapiente doloribus recusandae sunt. A, odio totam quam exercitationem ipsa laborum fuga officiis dolorem eaque cum animi dignissimos fugit cupiditate assumenda numquam accusamus aliquam illum voluptatibus! Aspernatur delectus placeat tempora itaque pariatur est tenetur. Dicta impedit, minima, omnis.
+    </p>
+
+    <div class="nav">
+  <a href="#cover">← Prev</a>
+  <a href="#page1">Next →</a>
+</div>
+    </section>
+
+    <hr>
+
+    <!-- PAGE 2 -->
+    <section id="page2">
+    <h2>AI & ML – Page 2</h2>
+    <p>
+        Machine Learning is a subset of AI that allows systems to learn from data without explicit programming.Lorem, ipsum dolor sit amet consectetur adipisicing elit. At unde repellendus molestiae enim fugiat, velit eligendi quam quo ignissimos enim, veniam, corrupti iste. Consectetur temporibus molestiae atque necessitatibus corrupti ad, itaque dolor nesciunt deserunt ab nam explicabo ipsam culpa consequuntur neque amet deleniti laborum vel accusamus minima dignissimos. Veniam officiis odio quod tempora, earum dignissimos nemo repudiandae quasi! Vero iste aliquid nisi ex voluptatum, cupiditate ratione vel nesciunt exercitationem, officiis illo eveniet quis maxime voluptate nostrum tenetur, rem doloremque. Est placeat esse, error similique ad doloremque, quisquam voluptatem debitis molestias vitae odio nemo animi rem. Dolor magni sapiente rerum deleniti, ad temporibus illum libero similique expedita omnis adipisci ex quis cum dignissimos nam harum tempore voluptates eos doloremque, a excepturi eius! 
+    </p>
+
+    <div class="nav">
+    <a href="#page1">← Prev</a>
+    <a href="#page3">Next →</a>
+    </div>
+    </section>
+
+    <hr>
+
+    <!-- PAGE 3 -->
+    <section id="page3">
+    <h2>AI & ML – Page 3</h2>
+    <p>
+        Deep Learning uses neural networks with multiple layers
+        to identify complex patterns in data.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo totam consequuntur quaerat culpa ea debitis ullam officiis expedita impedit accusantium! Sed consectetur tenetur voluptas placeat suscipit ipsa ipsum mollitia reprehenderit architecto, dicta assumenda modi nihil error nam nostrum quisquam, ullam officiis! Temporibus, enim impedit esse sit eum quidem blanditiis velit.ue eum eos? Excepturi, soluta dignissimos! Molestias voluptatem voluptas, ratione exercitationem culpa numquam at vel a non atque enim? Autem sequi ab nobis facilis animi delectus odio explicabo placeat modi aspernatur, nulla repellendus amet ullam perspiciatis in et excepturi cumque natus aperiam soluta odit nam consequuntur? Sint porro temporibus ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquam quisquam labore iusto reiciendis sunt veritatis quibusdam explicabo repellendus odit?
+    </p>
+
+    <div class="nav">
+    <a href="#page2">← Prev</a>
+ 
+    </div>
+    </section>
+
+</body>
+</html>
+
+
