@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Mini project</title>
+</head>
+<body>
+<h2>Policies </h2>
+<button onclick="fetchdata()">Fetch Policies</button>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Premium</th>
+      <th>Duration</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody id="display"></tbody>
+</table>
+
+<br>
+<button onclick="filterhealth()">Filter Health Insurance</button>
+<button onclick="filterlife()">Filter Life insurance</button>
+<button onclick="filtervehicle()">Filter Vehicle Insurance</button>
+
+<br><br>
+
+<button onclick="totalpremium()">Total Active Premium</button>
+<span id="totalPremiumDisplay"></span>
+
+<br><br>
+
+<button onclick="premiumdiscount()">Apply 10% Discount</button>
+<div id="discountDisplay"></div>
+
+<hr>
+
+<h2>Policy Approval</h2>
+<button onclick="showWithAction(policies)">Show Policies with Action</button>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Premium</th>
+      <th>Duration</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="approvedisplay"></tbody>
+</table>
+
+<h2>Policy Purchase</h2> 
+<button onclick="buyPolicy(2)">Buy Policy ID 2</button> 
+<p id="purchaseMessage" style="font-weight:bold;"></p> 
+<hr>
+<h2>Error Handling </h2>
+<button onclick="buyPolicyinvalid(6)">Buy Policy Invalid ID 6</button> 
+<button onclick="fetchData()">Fetch Policies (API Error Test)</button> 
+<button onclick="totalpremiumamount()">Calculate Total Premium</button> 
+<p id="successMessage"></p>
+<p id="errorMessage"></p>
+
+<script src="Insurance.js"></script>
+</body>
+</html>

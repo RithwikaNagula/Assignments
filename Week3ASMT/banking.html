@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Banking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Online Banking Dashboard</h1>
+  <div class="stats">
+  <div class="stat-card accounts">
+    <h4>Total Accounts</h4>
+    <h2 id="totalAccounts">0</h2>
+  </div>
+
+  <div class="stat-card balance">
+    <h4>Total Bank Balance</h4>
+    <h2><span id="totalBalance">0</span></h2>
+  </div>
+</div>
+   
+  <div class="card">
+    <h3>Search by filters</h3>
+    <input type="text" id="search" placeholder="Search by name" />
+    
+    <select id="branchFilter">
+      <option value="">All Branches</option>
+    </select>
+
+    <button onclick="sortByBalance()">Sort by Balance</button>
+  </div>
+  
+  <div class="card">
+    <h3>Add Account</h3>
+    <form id="addForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="branch" placeholder="Branch" required />
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Acc No</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Branch</th>
+          <th>Balance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="accounts"></tbody>
+    </table>
+  </div>
+  <div class="card" id="historyCard" style="display:none;">
+  <h3 id="historyTitle">Transaction History</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody id="historyBody"></tbody>
+  </table>
+</div>
+
+  <div class="card" style="text-align:center">
+  <button id="fetchBtn" class="btn-primary">
+    Fetch Bank Accounts
+  </button>
+</div>
+
+  <div class="loader-overlay" id="loader" style="display:none;">
+    <div class="spinner"></div>
+  </div>
+
+  <script src="banking.js"></script>
+
+</body>
+</html>
