@@ -1,0 +1,60 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+  background: #faf7f3;
+}
+
+.card {
+  width: 200px;
+  height: 180px;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.active {
+  border-color: #7a003c;
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.radio {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  color: white;
+}
+
+.radio.checked {
+  background: #7a003c;
+  border-color: #7a003c;
+}
