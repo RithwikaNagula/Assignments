@@ -1,0 +1,13 @@
+<div class="card">
+  <h3>{{ productName }}</h3>
+  <p>Rate the product</p>
+  <div class="stars">
+    <span
+      *ngFor="let star of [1,2,3,4,5]"
+      (click)="rate(star)"
+      [class.active]="star <= selectedRating">
+      ★
+    </span>
+  </div>
+  <p>Your rating: {{ selectedRating }}</p>
+</div>
