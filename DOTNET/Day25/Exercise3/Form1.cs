@@ -42,41 +42,17 @@ namespace Exercise3
             if ((checkBoxEmail.Checked == true || checkBoxPostal.Checked) == true &&
                 RadioMale.Checked == true)
             {
-                MessageBox.Show($"Hello Mr","Male",MessageBoxButtons.OKCancel,
+                MessageBox.Show("Hello Mr","Info",MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Information);
             }
             else
                 if ((checkBoxEmail.Checked == true || checkBoxPostal.Checked) == true
                 && RadioFemale.Checked == true)
             {
-                MessageBox.Show("Hello Mrs","Female", MessageBoxButtons.OKCancel,
+                MessageBox.Show("Hello Mrs","Info", MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Information);
             }
         }
-
-        private void checkBoxPostal_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBoxEmail_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RadioMale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RadioFemale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
