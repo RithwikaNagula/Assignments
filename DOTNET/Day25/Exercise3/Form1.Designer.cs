@@ -1,4 +1,4 @@
-﻿namespace Exercise3
+namespace Exercise3
 {
     partial class Form1
     {
@@ -72,7 +72,7 @@
             checkBoxPostal.TabIndex = 2;
             checkBoxPostal.Text = "Postal Mail";
             checkBoxPostal.UseVisualStyleBackColor = true;
-            checkBoxPostal.CheckedChanged += checkBoxPostal_CheckedChanged;
+            
             // 
             // checkBoxEmail
             // 
@@ -83,7 +83,7 @@
             checkBoxEmail.TabIndex = 3;
             checkBoxEmail.Text = "E-Mail";
             checkBoxEmail.UseVisualStyleBackColor = true;
-            checkBoxEmail.CheckedChanged += checkBoxEmail_CheckedChanged;
+
             // 
             // RadioMale
             // 
@@ -95,7 +95,7 @@
             RadioMale.TabStop = true;
             RadioMale.Text = "Male";
             RadioMale.UseVisualStyleBackColor = true;
-            RadioMale.CheckedChanged += RadioMale_CheckedChanged;
+            
             // 
             // RadioFemale
             // 
@@ -107,7 +107,7 @@
             RadioFemale.TabStop = true;
             RadioFemale.Text = "Female";
             RadioFemale.UseVisualStyleBackColor = true;
-            RadioFemale.CheckedChanged += RadioFemale_CheckedChanged;
+           
             // 
             // AddBtn
             // 
@@ -178,7 +178,7 @@
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(180, 144);
             checkedListBox1.TabIndex = 14;
-            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
+            
             // 
             // Form1
             // 
