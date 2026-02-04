@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InsuranceLibrary.Models
 {
@@ -68,4 +65,5 @@ namespace InsuranceLibrary.Models
             return $"ID: {PolicyId}, Name: {PolicyHolderName}, Type: {PolicyType},Premium: {PremiumAmount}, Term: {PolicyTerm} yrs, Active: {IsActive}";
         }
 	}
+
 }
