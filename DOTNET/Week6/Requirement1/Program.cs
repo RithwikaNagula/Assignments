@@ -68,7 +68,6 @@ namespace Requirement1
 
                 string ticketNo = data[4].Trim();
 
-                // parse date date format
                 DateTime parkedTime = DateTime.ParseExact(data[5].Trim(),"dd-MM-yyyy HH:mm:ss",CultureInfo.InvariantCulture);
                 double cost = double.Parse(data[6].Trim());
 
@@ -86,3 +85,4 @@ namespace Requirement1
         }
     }
 }
+
