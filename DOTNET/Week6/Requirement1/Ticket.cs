@@ -1,12 +1,12 @@
-﻿namespace Requirement1
+namespace Requirement1
 {
+
     internal class Ticket
     {
         private string _ticketNo;
         private DateTime _parkedTime;
         private double _cost;
 
-      
         public string TicketNo
         {
             get { return _ticketNo; }
@@ -25,6 +25,7 @@
             set { _cost = value; }
         }
 
+        // parameterized constructor to initialize ticket details
         public Ticket(string _ticketNo, DateTime _parkedTime, double _cost)
         {
             this._ticketNo = _ticketNo;
