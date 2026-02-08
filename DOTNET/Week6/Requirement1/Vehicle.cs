@@ -1,4 +1,4 @@
-﻿namespace Requirement1
+namespace Requirement1
 {
     internal class Vehicle
     {
@@ -8,7 +8,6 @@
         private double _weight;
         private Ticket _ticket;
 
-      
         public string RegistrationNo
         {
             get { return _registrationNo; }
@@ -39,10 +38,22 @@
             set { _ticket = value; }
         }
 
-   
+        // constructor with validation
         public Vehicle(string _registrationNo, string _name, string _type,
                        double _weight, Ticket _ticket)
         {
+            if (string.IsNullOrWhiteSpace(_registrationNo))
+                throw new ArgumentException("registration number cannot be empty");
+
+            if (string.IsNullOrWhiteSpace(_name))
+                throw new ArgumentException("name cannot be empty");
+
+            if (_ticket == null)
+                throw new ArgumentNullException("ticket cannot be null");
+
+            if (_weight <= 0)
+                throw new ArgumentException("weight must be positive");
+
             this._registrationNo = _registrationNo;
             this._name = _name;
             this._type = _type;
@@ -50,6 +61,7 @@
             this._ticket = _ticket;
         }
 
+        // display vehicle details
         public override string ToString()
         {
             return $"Registration No:{_registrationNo}\n" +
@@ -59,18 +71,26 @@
                    $"Ticket No:{_ticket.TicketNo}";
         }
 
-   
+        // compare vehicles based on registrationNo + name
         public override bool Equals(object obj)
         {
-            Vehicle other = obj as Vehicle;
+            try
+            {
+                Vehicle other = obj as Vehicle;
 
-            if (other == null)
+                if (other == null)
+                    return false;
+
+                return string.Equals(this._registrationNo, other._registrationNo, StringComparison.OrdinalIgnoreCase)
+                    && string.Equals(this._name, other._name, StringComparison.OrdinalIgnoreCase);
+            }
+            catch
+            {
                 return false;
-
-            return string.Equals(this._registrationNo, other._registrationNo, StringComparison.OrdinalIgnoreCase)
-                && string.Equals(this._name, other._name, StringComparison.OrdinalIgnoreCase);
+            }
         }
 
+        // override hashcode when equals overridden
         public override int GetHashCode()
         {
             return (_registrationNo + _name).ToLower().GetHashCode();
