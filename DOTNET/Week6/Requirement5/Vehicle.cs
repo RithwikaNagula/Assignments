@@ -1,5 +1,5 @@
 ﻿
-namespace Requirement4
+namespace Requirement5
 {
     public class Vehicle : IComparable<Vehicle>
     {
@@ -82,4 +82,5 @@ namespace Requirement4
                 RegistrationNo, Name, Type, Weight, Ticket.TicketNo);
         }
     }
+
 }
