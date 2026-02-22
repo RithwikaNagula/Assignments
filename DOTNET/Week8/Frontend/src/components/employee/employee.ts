@@ -1,8 +1,5 @@
-// ============================================
 // Employee Dashboard - Read-only profile view
-// Employees can only see their own data here,
-// they cannot edit or delete anything
-// ============================================
+// Employees can only see their own data here, they cannot edit or delete anything
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -49,3 +46,4 @@ export class EmployeeDashboard implements OnInit {
         });
     }
 }
+
