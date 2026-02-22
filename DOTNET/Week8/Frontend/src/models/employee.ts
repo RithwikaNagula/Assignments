@@ -1,8 +1,5 @@
-// ============================================
-// Employee Model - Shape of employee data
+// Employee Model
 // Matches the backend EmployeeDto
-// ============================================
-
 export interface Employee {
     id: number;
     name: string;
@@ -13,3 +10,4 @@ export interface Employee {
     managerId: number | null;
     managerName: string | null;
 }
+
