@@ -1,8 +1,3 @@
-// ============================================
-// Role Guard - Ensures the logged-in user has the
-// right role to access a specific dashboard.
-// For example, only Admins can reach /admin
-// ============================================
 
 import { inject } from '@angular/core';
 import { CanActivateFn, Router, ActivatedRouteSnapshot } from '@angular/router';
@@ -13,7 +8,6 @@ export const roleGuard: CanActivateFn = (route: ActivatedRouteSnapshot) => {
     const router = inject(Router);
 
     // Each route defines which roles are allowed via route data
-    // e.g., { path: 'admin', data: { roles: ['Admin'] } }
     const expectedRoles = route.data['roles'] as string[];
     const userRole = authService.getRole();
 
@@ -22,7 +16,8 @@ export const roleGuard: CanActivateFn = (route: ActivatedRouteSnapshot) => {
         return true;
     }
 
-    // Wrong role — send them back to login
+    // Wrong role - send them back to login
     router.navigate(['/login']);
     return false;
 };
+
