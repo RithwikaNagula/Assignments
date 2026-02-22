@@ -1,8 +1,3 @@
-// ============================================
-// Auth Interceptor - Attaches JWT token to every
-// outgoing HTTP request so the backend knows who
-// is making the call
-// ============================================
 
 import { HttpInterceptorFn } from '@angular/common/http';
 
@@ -28,3 +23,4 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
     // No token found — send the request as-is (for public endpoints like login)
     return next(req);
 };
+
