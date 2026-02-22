@@ -1,8 +1,5 @@
-// ============================================
 // Navbar Component - Top navigation bar that shows
 // the logged-in user's info and provides logout
-// ============================================
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../services/authservice';
@@ -20,8 +17,7 @@ export class Navbar {
     user: User | null = null;
 
     constructor(private authService: AuthService) {
-        // Subscribe to user changes so the navbar updates automatically
-        // when login/logout happens
+        // Subscribe to user changes so the navbar updates automatically when login/logout happens
         this.authService.currentUser$.subscribe(user => {
             this.user = user;
         });
@@ -37,3 +33,4 @@ export class Navbar {
         this.authService.logout();
     }
 }
+
