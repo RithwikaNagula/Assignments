@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="header">
+        <h1>Employees</h1>
+        @if (authService.userRole() === 'Admin') {
+        <button class="btn-primary">Add Employee</button>
+        }
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (emp of employees(); track emp.id) {
+                <tr>
+                    <td>{{ emp.id }}</td>
+                    <td>{{ emp.name }}</td>
+                    <td>{{ emp.email }}</td>
+                    <td>{{ emp.department }}</td>
+                    <td>{{ emp.salary | currency }}</td>
+                    <td class="actions">
+                        @if (authService.userRole() === 'Admin' || authService.userRole() === 'Manager') {
+                        <button class="btn-edit">Edit</button>
+                        }
+                        @if (authService.userRole() === 'Admin') {
+                        <button class="btn-delete" (click)="deleteEmployee(emp.id)">Delete</button>
+                        }
+                    </td>
+                </tr>
+                } @empty {
+                <tr>
+                    <td colspan="6" style="text-align: center;">No employees found.</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

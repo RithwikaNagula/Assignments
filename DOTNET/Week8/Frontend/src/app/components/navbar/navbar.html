@@ -1,0 +1,26 @@
+<nav class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-slate-900 text-white shadow-lg">
+    <div class="text-xl font-extrabold tracking-tight text-sky-400">
+        <span class="text-white">Employee</span> Management
+    </div>
+    <div class="flex items-center space-x-8">
+        @if(authService.isLoggedIn()) {
+        <a routerLink="/employees" routerLinkActive="text-sky-400 font-bold" [routerLinkActiveOptions]="{exact: true}"
+            class="text-slate-300 hover:text-white transition-colors font-medium">
+            Employees
+        </a>
+        <button (click)="authService.logout()"
+            class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white text-sm font-bold rounded-lg transition-all shadow-md active:scale-95">
+            Logout <span class="hidden md:inline"> ({{ authService.currentUser()?.role }})</span>
+        </button>
+        } @else {
+        <a routerLink="/login" routerLinkActive="text-sky-400 font-bold"
+            class="text-slate-300 hover:text-white transition-colors font-medium">
+            Login
+        </a>
+        <a routerLink="/register" routerLinkActive="text-sky-400 font-bold"
+            class="px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-lg transition-all shadow-md active:scale-95">
+            Register
+        </a>
+        }
+    </div>
+</nav>

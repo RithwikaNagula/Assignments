@@ -1,0 +1,55 @@
+<div class="flex items-center justify-center min-h-[80vh] bg-slate-50 p-6">
+    <div class="w-full max-w-md p-8 bg-white rounded-xl shadow-lg border border-slate-100">
+        <h2 class="mb-8 text-3xl font-bold text-center text-slate-800">Register</h2>
+        <form (ngSubmit)="onSubmit()" class="space-y-5">
+            <div class="space-y-1">
+                <label class="block text-sm font-medium text-slate-600">Username</label>
+                <input type="text" [(ngModel)]="form.username" name="username" required
+                    class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none transition-stroke">
+            </div>
+            <div class="space-y-1">
+                <label class="block text-sm font-medium text-slate-600">Full Name</label>
+                <input type="text" [(ngModel)]="form.fullName" name="fullName" required
+                    class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none transition-stroke">
+            </div>
+            <div class="space-y-1">
+                <label class="block text-sm font-medium text-slate-600">Email</label>
+                <input type="email" [(ngModel)]="form.email" name="email" required
+                    class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none transition-stroke">
+            </div>
+            <div class="space-y-1">
+                <label class="block text-sm font-medium text-slate-600">Password</label>
+                <input type="password" [(ngModel)]="form.password" name="password" required
+                    class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none transition-stroke">
+            </div>
+            <div class="space-y-1">
+                <label class="block text-sm font-medium text-slate-600">Role</label>
+                <select [(ngModel)]="form.role" name="role" required
+                    class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none transition-stroke">
+                    <option value="Employee">Employee</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <button type="submit" [disabled]="loading()"
+                class="w-full py-3 mt-4 bg-sky-500 hover:bg-sky-600 disabled:bg-slate-300 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-lg active:scale-[0.98]">
+                Register
+            </button>
+        </form>
+        <p class="mt-8 text-center text-slate-600">
+            Already have an account?
+            <a routerLink="/login" class="text-sky-500 hover:text-sky-600 font-semibold no-underline">Login</a>
+        </p>
+        @if (error()) {
+        <div class="mt-4 p-3 bg-red-50 border border-red-100 text-red-500 text-sm text-center rounded-lg animate-pulse">
+            {{ error() }}
+        </div>
+        }
+        @if (success()) {
+        <div
+            class="mt-4 p-3 bg-emerald-50 border border-emerald-100 text-emerald-600 text-sm text-center rounded-lg font-medium">
+            {{ success() }}
+        </div>
+        }
+    </div>
+</div>
