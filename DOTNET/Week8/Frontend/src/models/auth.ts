@@ -1,6 +1,3 @@
-// ============================================
-// Auth Models - Data shapes for authentication
-// ============================================
 
 // What the user sends when trying to log in
 export interface LoginRequest {
@@ -41,3 +38,4 @@ export interface User {
     role: string;
     token: string;
 }
+
