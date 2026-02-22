@@ -1,8 +1,4 @@
-// ============================================
 // Employee Service - CRUD operations for employees
-// Talks to the backend API for all employee data
-// ============================================
-
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, catchError, throwError } from 'rxjs';
@@ -77,3 +73,4 @@ export class EmployeeService {
         return throwError(() => ({ ...error, userMessage: message }));
     }
 }
+
