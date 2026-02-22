@@ -1,9 +1,5 @@
-// ============================================
 // Manager Dashboard - View and edit employee data
-// Managers can see all employees but cannot add
-// or delete them (only Admins can do that)
-// ============================================
-
+// Managers can see all employees but cannot add or delete them (only Admins can do that)
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -102,3 +98,4 @@ export class Manager implements OnInit {
         this.successMessage = '';
     }
 }
+
