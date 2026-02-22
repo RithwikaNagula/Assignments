@@ -1,8 +1,5 @@
-// ============================================
 // Auth Service - Handles login, register, logout,
 // password reset, and user session management
-// ============================================
-
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -41,7 +38,7 @@ export class AuthService {
             }
             return null;
         } catch (error) {
-            // If localStorage is unavailable (e.g., private browsing), fail gracefully
+            // If localStorage is unavailable, fails
             console.error('Could not access localStorage:', error);
             return null;
         }
@@ -169,3 +166,4 @@ export class AuthService {
         return throwError(() => ({ ...error, userMessage: message }));
     }
 }
+
