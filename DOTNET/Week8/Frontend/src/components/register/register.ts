@@ -1,8 +1,4 @@
-// ============================================
-// Register Component - Lets new users create an
-// account and pick their role (Admin/Manager/Employee)
-// ============================================
-
+// Register Component - Lets new users create an account and pick their role (Admin/Manager/Employee)
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -86,3 +82,4 @@ export class Register {
         });
     }
 }
+
