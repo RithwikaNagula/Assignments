@@ -1,8 +1,5 @@
-// ============================================
 // Login Component - Handles user authentication
 // with username, password, and CAPTCHA validation
-// ============================================
-
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -138,3 +135,4 @@ export class Login implements OnInit {
         });
     }
 }
+
