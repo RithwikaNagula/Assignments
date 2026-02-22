@@ -1,9 +1,6 @@
-// ============================================
-// Admin Dashboard - Full employee management with
+// Admin Dashboard
 // CRUD (Create, Read, Update, Delete) operations
 // Only accessible by users with the "Admin" role
-// ============================================
-
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -150,3 +147,4 @@ export class Admin implements OnInit {
         this.successMessage = '';
     }
 }
+
