@@ -1,10 +1,4 @@
-// ============================================
-// Forgot Password Component - Two-step flow:
-// 1. Enter email → backend sends reset link/token
-// 2. Enter token + new password → password is reset
 // Works the same way regardless of user role
-// ============================================
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -60,7 +54,6 @@ export class ForgotPassword {
         }
 
         this.isLoading = true;
-        // Using a dummy token since the user wants to skip the email step
         this.authService.resetPassword({
             email: this.email,
             token: 'bypass-token',
@@ -86,3 +79,4 @@ export class ForgotPassword {
         this.successMessage = '';
     }
 }
+
