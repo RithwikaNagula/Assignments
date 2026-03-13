@@ -1,0 +1,8 @@
+<h3>Message Service</h3>
+
+<input [(ngModel)]="newMsg" placeholder="Enter message">
+<button (click)="addMessage()">Add</button>
+
+<ul>
+  <p *ngFor="let msg of messages">{{ msg }}</p>
+</ul>

@@ -1,0 +1,12 @@
+<div class="cards">
+  <div
+    class="card"
+    *ngFor="let p of profiles; let i = index"
+    [class.active]="i === selected"
+    (click)="selectCard(i)">
+    <img [src]="p.img" alt="">
+    <h3>{{ p.name }}</h3>
+    <div class="radio" [class.checked]="i === selected">✓</div>
+  </div>
+
+</div>

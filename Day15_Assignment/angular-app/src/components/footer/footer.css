@@ -1,0 +1,85 @@
+.footer {
+  background: #fdf8f4;
+  padding: 40px 80px;
+ 
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.col p {
+  margin: 6px 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.col p:hover {
+  text-decoration: underline;
+}
+
+.account p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary {
+  background: #7a003c;
+  color: white;
+}
+
+.secondary {
+  background: #7a003c;
+  color: white;
+}
+
+hr {
+  margin: 40px 0;
+  border: 1px solid #ddd;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 14px;
+
+}
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}

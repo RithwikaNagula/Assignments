@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Policy CRUD</title>
+  <style>
+    body { font-family: Arial; }
+    .form-box { margin-bottom: 20px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 15px; }
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 220px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<h2>Policies</h2>
+<button onclick="getPolicies()">Load Policies</button>
+
+<div class="cards" id="policyCards"></div>
+<hr>
+
+<h2>Add / Update Policy</h2>
+
+<div class="form-box">
+  <input id="policyId" placeholder="Policy ID (for update/delete)">
+  <br><br>
+ 
+<input id="Name" placeholder="Policy Name">
+<input id="type" placeholder="Type">
+<input id="premium" type="number" placeholder="Premium">
+<input id="duration" type="number" placeholder="Duration">
+<input id="Status" placeholder="Status">
+
+  <br><br>
+
+  <button onclick="addPolicy()">Add Policy</button>
+  <button onclick="updatePolicy()">Update</button>
+  <button onclick="patchPolicy()">Patch</button>
+  <button onclick="deletePolicy()">Delete</button>
+</div>
+
+<script src="crudinsurance.js"></script>
+</body>
+</html>

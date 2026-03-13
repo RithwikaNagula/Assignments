@@ -1,0 +1,19 @@
+.desc {
+  background: #faf7f3;     
+  text-align: center;
+  padding: 25px 20px;
+   margin: 0;
+}
+
+.desc h2 {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #111;
+}
+
+.desc p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}

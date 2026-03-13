@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "7GVdwwoKrcPZ7tfCxDft1QUc2lHtm+fAr5SO/klHBy8=",
+  "Source": "StudentAttendanceSqlDB",
+  "BasePath": "_content/StudentAttendanceSqlDB",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,21 @@
+.banner {
+  position: relative;          
+  background: #faf7f3;
+  padding: 20px;
+  text-align: center;          
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #7a003c;
+  font-weight: 600;
+}

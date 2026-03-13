@@ -1,0 +1,51 @@
+<div class="space-y-6">
+  <div class="flex items-center justify-between">
+    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-600" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+      Employee Directory
+    </h2>
+    <span
+      class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+      {{employees.length}} Total
+    </span>
+  </div>
+
+  <div class="overflow-x-auto border border-slate-200 rounded-xl shadow-inner bg-slate-50">
+    <table class="min-w-full divide-y divide-slate-200">
+      <thead class="bg-slate-100">
+        <tr>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Name
+          </th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Email
+          </th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">
+            Department</th>
+          <th scope="col" class="px-6 py-3 text-right text-xs font-bold text-slate-500 uppercase tracking-wider">Salary
+          </th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-slate-100">
+        <tr *ngFor="let emp of employees" class="hover:bg-slate-50 transition-colors duration-150">
+          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">{{emp.name}}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">{{emp.email}}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">
+            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-slate-100 text-slate-800">
+              {{emp.department}}
+            </span>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-900 text-right font-mono">{{emp.salary |
+            currency:'INR':'symbol':'1.0-0'}}</td>
+        </tr>
+        <tr *ngIf="employees.length === 0">
+          <td colspan="4" class="px-6 py-12 text-center text-slate-500 italic">
+            No employees found. Register one above to get started.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

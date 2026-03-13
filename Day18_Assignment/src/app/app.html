@@ -1,0 +1,10 @@
+<h2>Product Rating App</h2>
+<div style="display:flex; gap:20px">
+  <app-ratingcard
+    *ngFor="let p of products"
+    [productName]="p.name"
+    (rated)="onRated(p.id, $event)">
+  </app-ratingcard>
+</div>
+
+<router-outlet />

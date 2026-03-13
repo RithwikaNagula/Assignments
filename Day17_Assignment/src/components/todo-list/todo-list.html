@@ -1,0 +1,54 @@
+<div class="max-w-3xl mx-auto p-6 bg-gray-50 min-h-screen">
+  <div class="bg-white p-6 rounded-xl shadow mb-6">
+    <h2 class="text-xl font-bold mb-4">
+      {{ isEdit ? 'Update User' : 'Add User' }}
+    </h2>
+
+    <div class="space-y-3">
+      <input
+        type="text"
+        placeholder="Name"
+        [(ngModel)]="newUser.name"
+        class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+
+      <input
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="newUser.email"
+        class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+
+      <button
+        (click)="addUser()"
+        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        {{ isEdit ? 'Update User' : 'Add User' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-white p-6 rounded-xl shadow">
+    <h2 class="text-xl font-bold mb-4">Users List</h2>
+
+    @for (u of todo; track u.id) {
+      <div class="flex justify-between items-center p-3 border-b">
+        <div>
+          <p class="font-semibold">{{ u.name }}</p>
+          <p class="text-gray-600 text-sm">{{ u.email }}</p>
+        </div>
+
+        <div class="space-x-2">
+          <button
+            (click)="editUser(u)"
+            class="px-3 py-1 bg-yellow-500 text-white rounded hover:bg-yellow-600">
+            Edit
+          </button>
+
+          <button
+            (click)="deleteUser(u.id)"
+            class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700">
+            Delete
+          </button>
+        </div>
+      </div>
+    } 
+  </div>
+</div>

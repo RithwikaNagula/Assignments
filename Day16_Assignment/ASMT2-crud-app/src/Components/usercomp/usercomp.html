@@ -1,0 +1,31 @@
+<h2>My Basic CRUD Operations</h2>
+<div style="border: 1px solid #222121; padding: 10px; width:
+300px">
+ <label>Name:</label><br />
+ <input type="text" [(ngModel)]="user.name" /><br /><br />
+ <label>Email:</label><br />
+ <input type="email" [(ngModel)]="user.email" /><br /><br />
+ <button (click)="saveUser()">{{ isEditMode ? 'Update' :
+'Add' }} User</button>
+</div>
+<hr />
+<table border="1" cellpadding="8">
+<thead>
+<tr>
+<th>Name</th>
+ <th>Email</th>
+ <th>Actions</th>
+ </tr>
+    </thead>
+ <tbody>@for (u of users; track $index) {
+ <tr>
+ <td>{{u.name}}</td>
+ <td>{{u.email}}</td>
+ <td>
+ <button (click)="editUser(u)">Edit</button>
+ <button (click)="deleteUser(u.id)">Delete</button>
+ </td>
+ </tr>}</tbody>
+ 
+ 
+</table>
