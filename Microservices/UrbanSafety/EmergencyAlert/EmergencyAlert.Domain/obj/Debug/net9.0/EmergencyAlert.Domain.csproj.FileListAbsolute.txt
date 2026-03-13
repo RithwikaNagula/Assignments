@@ -1,0 +1,12 @@
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\bin\Debug\net9.0\EmergencyAlert.Domain.deps.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\bin\Debug\net9.0\EmergencyAlert.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\bin\Debug\net9.0\EmergencyAlert.Domain.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.AssemblyInfoInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.AssemblyInfo.cs
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.sourcelink.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\refint\EmergencyAlert.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\EmergencyAlert.Domain.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Domain\obj\Debug\net9.0\ref\EmergencyAlert.Domain.dll

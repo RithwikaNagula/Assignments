@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KSebIMQkv4Nk0tLBbtzD8YmYXWpz1E5PtH+bLNYl8Mg=",
+  "Source": "EmergencyAlert.API",
+  "BasePath": "_content/EmergencyAlert.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

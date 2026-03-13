@@ -1,0 +1,16 @@
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\bin\Debug\net9.0\EmergencyAlert.Application.deps.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\bin\Debug\net9.0\EmergencyAlert.Application.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\bin\Debug\net9.0\EmergencyAlert.Application.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\bin\Debug\net9.0\EmergencyAlert.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\bin\Debug\net9.0\EmergencyAlert.Domain.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.csproj.AssemblyReference.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.AssemblyInfoInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.AssemblyInfo.cs
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.csproj.CoreCompileInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.sourcelink.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\Emergenc.49C7060C.Up2Date
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\refint\EmergencyAlert.Application.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\EmergencyAlert.Application.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\EmergencyAlert\EmergencyAlert.Application\obj\Debug\net9.0\ref\EmergencyAlert.Application.dll

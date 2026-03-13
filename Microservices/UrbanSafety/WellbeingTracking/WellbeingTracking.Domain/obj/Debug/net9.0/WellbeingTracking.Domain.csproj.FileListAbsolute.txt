@@ -1,0 +1,12 @@
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\bin\Debug\net9.0\WellbeingTracking.Domain.deps.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\bin\Debug\net9.0\WellbeingTracking.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\bin\Debug\net9.0\WellbeingTracking.Domain.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.AssemblyInfoInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.AssemblyInfo.cs
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.sourcelink.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\refint\WellbeingTracking.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\WellbeingTracking.Domain.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Domain\obj\Debug\net9.0\ref\WellbeingTracking.Domain.dll

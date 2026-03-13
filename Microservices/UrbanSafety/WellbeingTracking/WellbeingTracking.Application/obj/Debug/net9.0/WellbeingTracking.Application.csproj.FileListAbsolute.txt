@@ -1,0 +1,16 @@
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\bin\Debug\net9.0\WellbeingTracking.Application.deps.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\bin\Debug\net9.0\WellbeingTracking.Application.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\bin\Debug\net9.0\WellbeingTracking.Application.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\bin\Debug\net9.0\WellbeingTracking.Domain.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\bin\Debug\net9.0\WellbeingTracking.Domain.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.csproj.AssemblyReference.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.AssemblyInfoInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.AssemblyInfo.cs
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.csproj.CoreCompileInputs.cache
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.sourcelink.json
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\Wellbein.BC2BA97C.Up2Date
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\refint\WellbeingTracking.Application.dll
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\WellbeingTracking.Application.pdb
+C:\Users\rithw\OneDrive\Desktop\Training\LastWeekAssignment\WellbeingTracking\WellbeingTracking.Application\obj\Debug\net9.0\ref\WellbeingTracking.Application.dll

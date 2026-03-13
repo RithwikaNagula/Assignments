@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "7NTXW5zvwVfOiGymD6aW0mwAqIMQPdwcn9lp8+TPxi0=",
+  "Source": "WellbeingTracking.API",
+  "BasePath": "_content/WellbeingTracking.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
